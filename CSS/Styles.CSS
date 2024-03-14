@@ -1,0 +1,236 @@
+/**************TAG SELECTORS************/
+
+h1 {
+  color: #4E6C50;
+  font-size: 200px;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-align: center;
+}
+
+h2 {
+  color: #4E6C50;
+  font-size: 125px;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-align: center;
+  margin-top: -90px;
+}
+
+h4 {
+  color: #820000;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 30px;
+}
+
+body {
+
+  background-color: #FAECD6;
+  font-family: 'Atma';
+  font-size: 25px;
+  text-align: center;
+  color: #4A0404
+}
+
+img:hover {
+  background-color: #4E6C50;
+
+}
+
+img {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+img.bacon {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+/**************CLASS SELECTORS************/ 
+
+.transparent-gradient {
+  background: linear-gradient(to left, red, green);
+  opacity: 0.5;
+}
+.bacon {
+  background-color: #4E6C50;
+
+}
+
+.pizza {
+  background-color: #820000;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.icon:hover {
+  background-color: #4E6C50;
+
+}
+
+.circular {
+  border-radius: 100%;
+
+}
+.box {
+  border-radius: 100%;
+}
+
+.with-bacon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.with-bacon span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title:hover {
+  color: #4E6C50 !important;
+}
+
+
+/**************ID SELECTORS************/
+
+#heading {
+  color: #820000;
+
+}
+
+#subheading {
+  color: #820000;
+}
+
+.animated-heading {
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.icon.circular {
+
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  animation-direction: normal;
+  animation-direction: reverse;
+  animation-direction: alternate;
+  animation-direction: alternate-reverse;
+
+
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+
+}
+
+.box:hover {
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.textgrowbox {
+  border-top: 100px solid #820000;
+  height: 200px;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 0;
+  }
+
+  100% {
+    font-size: 60px;
+    color: #820000;
+  }
+}
+
+.textgrowbox:hover .grows {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.grows:hover .growsandstays {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+}
+.color-transition:hover {
+  animation-name: to-red;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.green-red-alternate {
+  animation-name: to-red;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes to-red {
+  from {
+    background-color: #4E6C50;
+  }
+
+  to {
+    background-color: #820000;
+  }
+
+}
+
+.red-green-alternate {
+  animation-name: to-green;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes to-green {
+  from {
+    background-color: #820000;
+  }
+
+  to {
+    background-color: #4E6C50;
+  }
+}
